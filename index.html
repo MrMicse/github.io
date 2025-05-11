@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Банковская рулетка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>💰 Банковская рулетка</h1>
+        
+        <div class="bank">
+            <p>💎 Банк: <span id="bank">1000</span> монет</p>
+        </div>
+        
+        <div class="controls">
+            <input type="number" id="bet" placeholder="Ваша ставка" min="1">
+        </div>
+        
+        <div class="level-info">
+            <p>Уровень: <span id="level">1</span></p>
+            <p>Множитель: <span id="multiplier">x1.20</span></p>
+        </div>
+        
+        <div class="buttons">
+            <button class="game-btn" disabled>Кнопка 1</button>
+            <button class="game-btn" disabled>Кнопка 2</button>
+            <button class="game-btn" disabled>Кнопка 3</button>
+        </div>
+        
+        <div class="result"></div>
+
+            <!-- Кнопка сброса прогресса в самом низу -->
+        <div class="bottom-controls">
+            <button id="resetBank" class="reset-btn">Сбросить прогресс</button>
+            <!-- Кнопка звука в правом нижнем углу -->
+            <button id="soundToggle" class="sound-btn">🔊</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
