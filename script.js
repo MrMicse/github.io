@@ -367,11 +367,11 @@ function showWarning(message, duration) {
 // Рестарт
 document.getElementById('resetBank').addEventListener('click', () => {
     Sound.play('reset');
-    updateBank(1000);
+    updateBank(100);
     currentLevel = 1;
     levelEl.textContent = currentLevel;
     multiplierEl.textContent = `x${multipliers[currentLevel - 1]}`;
-    alert("Прогресс сброшен! Банк: 1000 коинов");
+    alert("Прогресс сброшен! Банк: 100 коинов");
 });
 
 
@@ -425,4 +425,5 @@ function createAudioContext() {
             .connect(ctx.destination);
         sound.start();
     };
+
 }
